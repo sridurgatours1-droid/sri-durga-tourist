@@ -149,8 +149,8 @@ const PackageDetails = ({ pkg, onClose }) => {
                 const message = `Hi, I'm interested in the "${pkg.name}" package. Can you provide more details?`;
                 const encodedMessage = encodeURIComponent(message);
                 window.open(
-                  `https://wa.me/919742251685?text=${encodedMessage}`,
-                  "_blank"
+                  `https://wa.me/918749070550?text=${encodedMessage}`,
+                  "_blank",
                 );
               }}
             >

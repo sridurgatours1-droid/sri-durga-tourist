@@ -8,6 +8,21 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+    setIsOpen(false);
+  };
+
+  const navItems = [
+    { label: "Home", id: "home" },
+    { label: "Packages", id: "packages" },
+    { label: "Gallery", id: "gallery" },
+    { label: "Contact Us", id: "contact" },
+  ];
+
   return (
     <motion.nav
       className="sticky top-0 bg-white shadow-md z-50"
@@ -16,12 +31,22 @@ const Navbar = () => {
       transition={{ duration: 0.5 }}
     >
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        <h1 className="text-xl font-bold">Sri Durga Tours</h1>
+        <h1
+          className="text-xl font-bold hover:text-blue-500 cursor-pointer"
+          onClick={() => scrollToSection("home")}
+        >
+          Sri Durga Tours
+        </h1>
         <ul className="hidden md:flex space-x-6">
-          <li className="hover:text-blue-500 cursor-pointer">Home</li>
-          <li className="hover:text-blue-500 cursor-pointer">Packages</li>
-          <li className="hover:text-blue-500 cursor-pointer">Gallery</li>
-          <li className="hover:text-blue-500 cursor-pointer">Contact Us</li>
+          {navItems.map((item) => (
+            <li
+              key={item.id}
+              className="hover:text-blue-500 cursor-pointer transition-colors"
+              onClick={() => scrollToSection(item.id)}
+            >
+              {item.label}
+            </li>
+          ))}
         </ul>
         <div className="md:hidden">
           <button onClick={toggleMenu} className="text-xl">
@@ -36,10 +61,15 @@ const Navbar = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.3 }}
         >
-          <li className="hover:text-blue-500 cursor-pointer">Home</li>
-          <li className="hover:text-blue-500 cursor-pointer">Packages</li>
-          <li className="hover:text-blue-500 cursor-pointer">Gallery</li>
-          <li className="hover:text-blue-500 cursor-pointer">Contact Us</li>
+          {navItems.map((item) => (
+            <li
+              key={item.id}
+              className="hover:text-blue-500 cursor-pointer transition-colors"
+              onClick={() => scrollToSection(item.id)}
+            >
+              {item.label}
+            </li>
+          ))}
         </motion.ul>
       )}
     </motion.nav>

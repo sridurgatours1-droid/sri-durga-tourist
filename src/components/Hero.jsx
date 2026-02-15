@@ -2,6 +2,13 @@ import gal9 from "../assets/bg.png";
 import { motion } from "framer-motion";
 
 const Hero = () => {
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section
       className="relative h-screen bg-center bg-cover"
@@ -34,10 +41,24 @@ const Hero = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          <button className="bg-blue-500 hover:bg-blue-600 px-6 py-2 rounded">
+          <button
+            onClick={() => scrollToSection("packages")}
+            className="bg-blue-500 hover:bg-blue-600 px-6 py-2 rounded transition-colors"
+          >
             View Packages
           </button>
-          <button className="bg-gray-500 hover:bg-gray-600 px-6 py-2 rounded">
+          <button
+            onClick={() => {
+              const message =
+                "Hi, I'm interested in exploring your tour packages. Can you provide more details?";
+              const encodedMessage = encodeURIComponent(message);
+              window.open(
+                `https://wa.me/918749070550?text=${encodedMessage}`,
+                "_blank",
+              );
+            }}
+            className="bg-green-500 hover:bg-green-600 px-6 py-2 rounded transition-colors flex items-center gap-2"
+          >
             Contact Us
           </button>
         </motion.div>

@@ -18,12 +18,20 @@ function App() {
       transition={{ duration: 0.5 }}
     >
       <Navbar />
-      <Hero />
+      <div id="home">
+        <Hero />
+      </div>
       <About />
-      <PopularPackages />
+      <div id="packages">
+        <PopularPackages />
+      </div>
       <WhyChooseUs />
-      <Gallery />
-      <ContactUs />
+      <div id="gallery">
+        <Gallery />
+      </div>
+      <div id="contact">
+        <ContactUs />
+      </div>
       <Footer />
     </motion.div>
   );
