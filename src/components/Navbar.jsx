@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <motion.nav
       className="sticky top-0 bg-white shadow-md z-50"
@@ -18,9 +24,24 @@ const Navbar = () => {
           <li className="hover:text-blue-500 cursor-pointer">Contact Us</li>
         </ul>
         <div className="md:hidden">
-          <button className="text-xl">☰</button>
+          <button onClick={toggleMenu} className="text-xl">
+            ☰
+          </button>
         </div>
       </div>
+      {isOpen && (
+        <motion.ul
+          className="md:hidden bg-white shadow-md space-y-4 p-4"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.3 }}
+        >
+          <li className="hover:text-blue-500 cursor-pointer">Home</li>
+          <li className="hover:text-blue-500 cursor-pointer">Packages</li>
+          <li className="hover:text-blue-500 cursor-pointer">Gallery</li>
+          <li className="hover:text-blue-500 cursor-pointer">Contact Us</li>
+        </motion.ul>
+      )}
     </motion.nav>
   );
 };

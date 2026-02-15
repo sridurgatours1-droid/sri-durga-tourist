@@ -7,25 +7,25 @@ const packages = [
     description:
       "Explore the iconic Murudeshwara temple and relax at the beach.",
     duration: "1 Day",
-    image: "https://source.unsplash.com/400x300/?temple,beach",
+    image: "/src/assets/packs/m1.jpg",
   },
   {
     name: "Murudeshwara – Gokarna – Honnavar Package",
     description: "A spiritual and scenic journey through coastal Karnataka.",
     duration: "2 Days",
-    image: "https://source.unsplash.com/400x300/?coast,travel",
+    image: "/src/assets/packs/m2.jpg",
   },
   {
     name: "Coastal Karnataka Temple Tour",
     description: "Visit famous temples along the serene Karnataka coast.",
     duration: "3 Days",
-    image: "https://source.unsplash.com/400x300/?temple,coast",
+    image: "/src/assets/packs/m3.jpeg",
   },
   {
     name: "Weekend Murudeshwara Getaway",
     description: "A perfect weekend escape to Murudeshwara.",
     duration: "2 Days",
-    image: "https://source.unsplash.com/400x300/?weekend,getaway",
+    image: "/src/assets/packs/m4.jpg",
   },
 ];
 

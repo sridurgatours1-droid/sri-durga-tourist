@@ -1,16 +1,15 @@
-import React from "react";
+import gal9 from "../assets/bg.png";
 import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
     <section
-      className="relative bg-cover bg-center h-screen"
+      className="relative h-screen bg-center bg-cover"
       style={{
-        backgroundImage:
-          "url(https://source.unsplash.com/1600x900/?travel,car)",
+        backgroundImage: `url(${gal9})`,
       }}
     >
-      <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center text-white">
+      <div className="absolute inset-0 bg-black/50 flex flex-col justify-center items-center text-center text-white">
         <motion.h1
           className="text-4xl md:text-6xl font-bold"
           initial={{ opacity: 0, y: -50 }}
@@ -19,6 +18,7 @@ const Hero = () => {
         >
           Sri Durga Tours and Travels
         </motion.h1>
+
         <motion.p
           className="mt-4 text-lg md:text-2xl"
           initial={{ opacity: 0, y: 50 }}
@@ -27,16 +27,17 @@ const Hero = () => {
         >
           Car Rentals & Tour Packages for Coastal and Temple Destinations
         </motion.p>
+
         <motion.div
           className="mt-6 flex space-x-4"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          <button className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded">
+          <button className="bg-blue-500 hover:bg-blue-600 px-6 py-2 rounded">
             View Packages
           </button>
-          <button className="bg-gray-500 hover:bg-gray-600 text-white px-6 py-2 rounded">
+          <button className="bg-gray-500 hover:bg-gray-600 px-6 py-2 rounded">
             Contact Us
           </button>
         </motion.div>

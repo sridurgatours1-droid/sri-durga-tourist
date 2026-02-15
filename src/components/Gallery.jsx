@@ -2,12 +2,15 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const images = [
-  "https://source.unsplash.com/400x300/?travel",
-  "https://source.unsplash.com/400x300/?temple",
-  "https://source.unsplash.com/400x300/?beach",
-  "https://source.unsplash.com/400x300/?car",
-  "https://source.unsplash.com/400x300/?coast",
-  "https://source.unsplash.com/400x300/?journey",
+  "/src/assets/gallery/1gal.jpeg",
+  "/src/assets/gallery/2gal.jpeg",
+  "/src/assets/gallery/3gal.jpeg",
+  "/src/assets/gallery/4gal.jpeg",
+  "/src/assets/gallery/5gal.jpeg",
+  "/src/assets/gallery/6gal.jpeg",
+  "/src/assets/gallery/7gal.jpeg",
+  "/src/assets/gallery/8gal.jpeg",
+  "/src/assets/gallery/9gal.jpeg",
 ];
 
 const Gallery = () => {
@@ -26,13 +29,13 @@ const Gallery = () => {
           {images.map((image, index) => (
             <motion.div
               key={index}
-              className="overflow-hidden rounded shadow-lg"
+              className="overflow-hidden rounded shadow-lg aspect-[3/4]"
               whileHover={{ scale: 1.05 }}
             >
               <img
                 src={image}
                 alt={`Gallery ${index + 1}`}
-                className="w-full h-48 object-cover"
+                className="w-full h-full object-cover"
               />
             </motion.div>
           ))}
