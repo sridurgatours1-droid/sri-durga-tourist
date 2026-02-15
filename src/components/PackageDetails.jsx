@@ -143,7 +143,17 @@ const PackageDetails = ({ pkg, onClose }) => {
 
           {/* CTA Buttons */}
           <div className="flex gap-4">
-            <button className="flex-1 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 rounded transition">
+            <button
+              className="flex-1 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 rounded transition"
+              onClick={() => {
+                const message = `Hi, I'm interested in the "${pkg.name}" package. Can you provide more details?`;
+                const encodedMessage = encodeURIComponent(message);
+                window.open(
+                  `https://wa.me/919742251685?text=${encodedMessage}`,
+                  "_blank"
+                );
+              }}
+            >
               Book Now
             </button>
             <button
