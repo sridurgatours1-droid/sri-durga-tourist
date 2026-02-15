@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import PackageDetails from "./PackageDetails";
+import m1 from "../assets/packs/m1.jpg";
+import m2 from "../assets/packs/m2.jpg";
+import m3 from "../assets/packs/m3.jpeg";
+import m4 from "../assets/packs/m4.jpg";
 
 const packages = [
   {
@@ -12,7 +16,7 @@ const packages = [
     price: "2,500",
     groupSize: "4-25 people",
     difficulty: "Easy",
-    image: "/src/assets/packs/m1.jpg",
+    image: m1,
     overview:
       "Experience the grandeur of the Murudeshwara temple, one of the tallest temple towers in India, followed by a serene beach relaxation. This one-day tour is perfect for both spiritual seekers and beach lovers. Visit the ancient 9-story gopuram, explore the temple premises, and enjoy the pristine Arabian Sea beaches.",
     itinerary: [
@@ -54,7 +58,7 @@ const packages = [
     price: "5,800",
     groupSize: "4-30 people",
     difficulty: "Moderate",
-    image: "/src/assets/packs/m2.jpg",
+    image: m2,
     overview:
       "Embark on a mesmerizing 2-day coastal journey through Karnataka's most spiritual and picturesque destinations. This package combines temple visits, beach exploration, and local culture experiences. Visit Murudeshwara's iconic temple, explore Gokarna's famous beaches and temples, and discover the hidden gem of Honnavar.",
     itinerary: [
@@ -98,7 +102,7 @@ const packages = [
     price: "8,900",
     groupSize: "4-35 people",
     difficulty: "Moderate",
-    image: "/src/assets/packs/m3.jpeg",
+    image: m3,
     overview:
       "A comprehensive 3-day spiritual journey visiting the most revered temples along Karnataka's coast. This tour includes Murudeshwara, Gokarna, Udupi, and Sringeri temples, each with unique architectural and spiritual significance. Perfect for pilgrims, culture enthusiasts, and history buffs.",
     itinerary: [
@@ -144,7 +148,7 @@ const packages = [
     price: "4,500",
     groupSize: "2-20 people",
     difficulty: "Easy",
-    image: "/src/assets/packs/m4.jpg",
+    image: m4,
     overview:
       "Perfect for busy professionals and families seeking a quick escape from city life. This 2-day weekend package combines spiritual experiences at the Murudeshwara Temple with relaxation at the beautiful beaches. Ideal for rejuvenation and creating memorable moments with loved ones.",
     itinerary: [

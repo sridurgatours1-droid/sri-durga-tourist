@@ -1,17 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
+import gal1 from "../assets/gallery/1gal.jpeg";
+import gal2 from "../assets/gallery/2gal.jpeg";
+import gal3 from "../assets/gallery/3gal.jpeg";
+import gal4 from "../assets/gallery/4gal.jpeg";
+import gal5 from "../assets/gallery/5gal.jpeg";
+import gal6 from "../assets/gallery/6gal.jpeg";
+import gal7 from "../assets/gallery/7gal.jpeg";
+import gal8 from "../assets/gallery/8gal.jpeg";
+import gal9 from "../assets/gallery/9gal.jpeg";
 
-const images = [
-  "/src/assets/gallery/1gal.jpeg",
-  "/src/assets/gallery/2gal.jpeg",
-  "/src/assets/gallery/3gal.jpeg",
-  "/src/assets/gallery/4gal.jpeg",
-  "/src/assets/gallery/5gal.jpeg",
-  "/src/assets/gallery/6gal.jpeg",
-  "/src/assets/gallery/7gal.jpeg",
-  "/src/assets/gallery/8gal.jpeg",
-  "/src/assets/gallery/9gal.jpeg",
-];
+const images = [gal1, gal2, gal3, gal4, gal5, gal6, gal7, gal8, gal9];
 
 const Gallery = () => {
   return (
