@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white py-6">
       <div className="container mx-auto px-4 text-center">
-        <p className="text-lg font-semibold">Sri Durga Tours and Travels</p>
+        <p className="text-lg font-semibold">Shree Durga Tourist</p>
         <p className="text-sm">
           Your trusted partner for coastal and temple tours
         </p>

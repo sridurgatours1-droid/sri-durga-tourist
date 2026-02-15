@@ -48,13 +48,16 @@ const ContactUs = () => {
             <span>Chat with us on WhatsApp</span>
           </motion.div>
           <motion.div
-            className="flex items-center justify-center space-x-4 text-lg"
+            className="flex items-center justify-center space-x-4 text-lg cursor-pointer hover:text-red-600 transition-colors"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
+            onClick={() =>
+              window.open("https://share.google/Qc9tDe1SIhn0Baqic", "_blank")
+            }
           >
             <FaMapMarkerAlt className="text-red-500" />
-            <span>Karnataka, India</span>
+            <span>Shree Durga Tourist Murdeshwar</span>
           </motion.div>
         </div>
       </div>

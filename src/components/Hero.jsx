@@ -23,7 +23,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Sri Durga Tours and Travels
+          Shree Durga Tourist
         </motion.h1>
 
         <motion.p

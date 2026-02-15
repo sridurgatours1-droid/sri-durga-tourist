@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import logo from "../assets/logo_sdt.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,12 +32,13 @@ const Navbar = () => {
       transition={{ duration: 0.5 }}
     >
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        <h1
-          className="text-xl font-bold hover:text-blue-500 cursor-pointer"
+        <div
+          className="flex items-center gap-3 hover:opacity-80 cursor-pointer transition-opacity"
           onClick={() => scrollToSection("home")}
         >
-          Sri Durga Tours
-        </h1>
+          <img src={logo} alt="SDT Logo" className="h-18 w-18" />
+          <h1 className="text-xl font-bold">Shree Durga Tourist</h1>
+        </div>
         <ul className="hidden md:flex space-x-6">
           {navItems.map((item) => (
             <li
