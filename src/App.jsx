@@ -3,9 +3,11 @@ import { motion } from "framer-motion";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
-import PopularPackages from "./components/PopularPackages";
+import DestinationShowcase from "./components/DestinationShowcase";
 import WhyChooseUs from "./components/WhyChooseUs";
 import Gallery from "./components/Gallery";
+import Reviews from "./components/Reviews";
+import Location from "./components/Location";
 import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer";
 
@@ -23,12 +25,14 @@ function App() {
       </div>
       <About />
       <div id="packages">
-        <PopularPackages />
+        <DestinationShowcase />
       </div>
       <WhyChooseUs />
       <div id="gallery">
         <Gallery />
       </div>
+      <Reviews />
+      <Location />
       <div id="contact">
         <ContactUs />
       </div>

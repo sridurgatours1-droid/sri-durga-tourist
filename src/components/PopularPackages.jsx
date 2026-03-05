@@ -13,7 +13,6 @@ const packages = [
     description:
       "Explore the iconic Murudeshwara temple and relax at the beach.",
     duration: "1 Day",
-    price: "2,500",
     groupSize: "4-25 people",
     difficulty: "Easy",
     image: m1,
@@ -30,18 +29,14 @@ const packages = [
       "Relax on pristine sandy beaches",
       "Experience authentic South Indian temple culture",
       "Photography opportunities of the sunset",
-      "Local vegetarian and non-vegetarian food options",
     ],
     inclusions: [
       "Comfortable AC vehicle transportation",
       "Professional guide throughout the day",
       "Temple entrance fees",
       "Beach access",
-      "One vegetarian meal (lunch)",
-      "Bottled water and snacks",
     ],
     exclusions: [
-      "Beverages and alcohol",
       "Personal expenses and shopping",
       "Optional activities",
       "Travel insurance",
@@ -55,7 +50,6 @@ const packages = [
     name: "Murudeshwara – Gokarna – Honnavar Package",
     description: "A spiritual and scenic journey through coastal Karnataka.",
     duration: "2 Days",
-    price: "5,800",
     groupSize: "4-30 people",
     difficulty: "Moderate",
     image: m2,
@@ -75,17 +69,12 @@ const packages = [
       "Experience authentic coastal Karnataka culture",
     ],
     inclusions: [
-      "2 nights accommodation in 3-star hotels",
       "Comfortable AC vehicle transportation",
       "Professional guide for both days",
       "All temple entrance fees",
-      "Breakfast and lunch (vegetarian/non-vegetarian options)",
-      "Complimentary water and snacks",
       "Travel assistance and local recommendations",
     ],
     exclusions: [
-      "Beverages and alcoholic drinks",
-      "Dinner on Day 1 and Day 2",
       "Personal shopping and expenses",
       "Adventure activities (parasailing, water sports)",
       "Travel insurance",
@@ -99,7 +88,6 @@ const packages = [
     name: "Coastal Karnataka Temple Tour",
     description: "Visit famous temples along the serene Karnataka coast.",
     duration: "3 Days",
-    price: "8,900",
     groupSize: "4-35 people",
     difficulty: "Moderate",
     image: m3,
@@ -116,21 +104,15 @@ const packages = [
       "Visit famous beaches - Om Beach, Half Moon Beach, Udupi Beach",
       "Learn about ancient temple architecture and history",
       "Interact with local pilgrims and priests",
-      "Taste authentic South Indian temple food",
       "Photography opportunities of ancient temples",
     ],
     inclusions: [
-      "3 nights accommodation in comfortable 3-star hotels",
       "AC vehicle transportation throughout",
       "Experienced cultural guide",
       "All temple entrance fees",
-      "Breakfast and lunch (vegetarian/non-vegetarian)",
-      "Evening snacks and chai",
-      "Complimentary water and beverages",
+      "Complimentary water",
     ],
     exclusions: [
-      "Dinner meals",
-      "Alcoholic beverages",
       "Personal shopping and souvenirs",
       "Optional activities and adventure sports",
       "Travel insurance",
@@ -145,7 +127,6 @@ const packages = [
     name: "Weekend Murudeshwara Getaway",
     description: "A perfect weekend escape to Murudeshwara.",
     duration: "2 Days",
-    price: "4,500",
     groupSize: "2-20 people",
     difficulty: "Easy",
     image: m4,
@@ -161,20 +142,14 @@ const packages = [
       "Panoramic coastal views",
       "Beach activities and swimming",
       "Sunset viewing on the beach",
-      "Local authentic cuisine tasting",
       "Perfect for families and couples",
     ],
     inclusions: [
-      "1 night 3-star hotel accommodation",
       "AC vehicle pickup and drop-off service",
       "Temple visit and entrance fees",
-      "Breakfast and lunch",
-      "Complimentary water and snacks",
       "Basic tour information",
     ],
     exclusions: [
-      "Dinner meals (both days)",
-      "Beverages other than water",
       "Personal expenses and shopping",
       "Water sports and special activities",
       "Travel insurance",
@@ -216,11 +191,8 @@ const PopularPackages = () => {
                 <div className="p-4">
                   <h3 className="text-xl font-semibold mb-2">{pkg.name}</h3>
                   <p className="text-gray-600 mb-2">{pkg.description}</p>
-                  <p className="text-sm text-gray-500 mb-2">
+                  <p className="text-sm text-gray-500 mb-4">
                     Duration: {pkg.duration}
-                  </p>
-                  <p className="text-lg font-bold text-green-600 mb-4">
-                    ₹{pkg.price}
                   </p>
                   <button
                     onClick={() => setSelectedPackage(pkg)}

@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 
 const reasons = [
   "Experienced local drivers",
-  "Affordable pricing",
   "Clean and well-maintained cars",
   "Customizable packages",
   "On-time pickup and drop",

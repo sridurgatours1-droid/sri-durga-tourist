@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { X, MapPin, Clock, Users, DollarSign, Camera } from "lucide-react";
+import { X, MapPin, Clock, Users, Camera } from "lucide-react";
 
 const PackageDetails = ({ pkg, onClose }) => {
   if (!pkg) return null;
@@ -42,19 +42,12 @@ const PackageDetails = ({ pkg, onClose }) => {
           <p className="text-gray-600 mb-6">{pkg.description}</p>
 
           {/* Key Details */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-6">
             <div className="flex items-center gap-2">
               <Clock className="text-blue-500" size={20} />
               <div>
                 <p className="text-sm text-gray-600">Duration</p>
                 <p className="font-semibold">{pkg.duration}</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-2">
-              <DollarSign className="text-green-500" size={20} />
-              <div>
-                <p className="text-sm text-gray-600">Price</p>
-                <p className="font-semibold">₹{pkg.price}</p>
               </div>
             </div>
             <div className="flex items-center gap-2">

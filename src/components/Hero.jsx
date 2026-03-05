@@ -32,7 +32,8 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          Car Rentals & Tour Packages for Coastal and Temple Destinations
+          Car Rentals, Taxi Services & Tour Packages for Coastal and Temple
+          Destinations
         </motion.p>
 
         <motion.div

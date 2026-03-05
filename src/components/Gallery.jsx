@@ -9,8 +9,22 @@ import gal6 from "../assets/gallery/6gal.jpeg";
 import gal7 from "../assets/gallery/7gal.jpeg";
 import gal8 from "../assets/gallery/8gal.jpeg";
 import gal9 from "../assets/gallery/9gal.jpeg";
+import gal10 from "../assets/gallery/10gal.jpeg";
+import gal11 from "../assets/gallery/11gal.jpeg";
 
-const images = [gal1, gal2, gal3, gal4, gal5, gal6, gal7, gal8, gal9];
+const images = [
+  gal1,
+  gal2,
+  gal3,
+  gal4,
+  gal5,
+  gal6,
+  gal7,
+  gal8,
+  gal9,
+  gal10,
+  gal11,
+];
 
 const Gallery = () => {
   return (
@@ -24,11 +38,11 @@ const Gallery = () => {
         >
           Gallery
         </motion.h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {images.map((image, index) => (
             <motion.div
               key={index}
-              className="overflow-hidden rounded shadow-lg aspect-[3/4]"
+              className="overflow-hidden rounded shadow-lg h-64"
               whileHover={{ scale: 1.05 }}
             >
               <img

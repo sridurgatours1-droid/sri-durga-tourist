@@ -1,19 +1,27 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaPhoneAlt, FaWhatsapp, FaMapMarkerAlt } from "react-icons/fa";
+import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 
 const ContactUs = () => {
   return (
     <section className="py-12 bg-gray-100">
       <div className="container mx-auto px-4 text-center">
         <motion.h2
-          className="text-3xl font-bold mb-6"
+          className="text-3xl font-bold mb-2"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
-          Contact Us
+          Quick Contact
         </motion.h2>
+        <motion.p
+          className="text-gray-600 mb-8 max-w-2xl mx-auto"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+        >
+          Get in touch with us directly through phone or WhatsApp for immediate assistance
+        </motion.p>
         <div className="space-y-4">
           <motion.div
             className="flex items-center justify-center space-x-4 text-lg"
@@ -47,18 +55,7 @@ const ContactUs = () => {
             <FaWhatsapp className="text-green-500" />
             <span>Chat with us on WhatsApp</span>
           </motion.div>
-          <motion.div
-            className="flex items-center justify-center space-x-4 text-lg cursor-pointer hover:text-red-600 transition-colors"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            onClick={() =>
-              window.open("https://share.google/Qc9tDe1SIhn0Baqic", "_blank")
-            }
-          >
-            <FaMapMarkerAlt className="text-red-500" />
-            <span>Shree Durga Tourist Murdeshwar</span>
-          </motion.div>
+
         </div>
       </div>
     </section>
